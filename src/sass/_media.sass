@@ -11,10 +11,13 @@
     &__container
       padding-bottom: 10%
 @media screen and (max-width: 1455px)
-
   .offer
     &-text
       margin-right: 10%
+@media screen and (max-width: 1344px)
+  .features
+    margin-top: 10%
+
 
 @media screen and (max-width: 1297px)
   .fullscreen
@@ -28,6 +31,11 @@
     margin-bottom: 30px
     &-bg
       display: none
+      &__wrapper
+        display: none
+    &-social
+      &__link
+        margin-right: 40px
 
     &-burger
       display: block
@@ -99,6 +107,9 @@
       line-height: 15px
     &-block
       align-items: center
+    &-social
+      &__link
+        margin-right: 20px
   .offer
     &-block
       &__container
@@ -126,9 +137,19 @@
       &__text
         font-size: 16px
         line-height: 20px
+@media screen and (max-width: 380px)
+  .header
+    &-social
+      &__link
+        margin-right: 10px
 
 
 @media screen and (max-width: 360px)
+  .header
+    &-block
+      flex-direction: column
+    &-burger, &-social
+      margin-bottom: 30px
   .offer
     &-text
       margin-right: 0

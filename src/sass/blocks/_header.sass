@@ -1,5 +1,5 @@
 .header
-  padding: 20px 0
+  padding: 0 5px 0 0
   margin-bottom: 0
   position: relative
   &-burger
@@ -22,10 +22,10 @@
     &::after
       bottom: 0
   &-block
-    justify-content: center
+    justify-content: space-between
     align-items: center
   &-menu
-    margin-right: 117px
+    margin-right: 30px
     &__link
       color: $black-color
       margin-right: 53px
@@ -34,8 +34,20 @@
         weight: 400
       &:last-child
         margin-right: 0
+  &-social
+    display: flex
+    &__link
+      display: inline-block
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+    &__img
+      width: 20px
+      height: 20px
   &__button
     @include styleButton('true')
     font:
       size: 16px
       weight: 700
+  &-container-fluid
+    padding: 0
