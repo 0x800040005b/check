@@ -1,0 +1,20 @@
+@mixin styleButton ($transparentButton)
+  padding: 16px 28px
+  border-radius: 18px
+  text-align: center
+  //max-height: 50px
+
+  @if ($transparentButton == 'true')
+     background: transparent
+     border: 3px solid $violet-color
+     color: $violet-color
+     filter: drop-shadow(0px 4px 12px rgba(171, 102, 217, 0.55))
+
+  @else if($transparentButton == 'false')
+    background: $violet-color
+    color: $white-color
+    box-shadow: 0px 4px 18px rgba(171, 102, 217, 0.7)
+
+
+
+

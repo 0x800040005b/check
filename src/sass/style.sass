@@ -1,0 +1,42 @@
+@import "colors"
+@import "fonts"
+@import "mixins"
+@import "reset"
+
+/* Styles For Blocks */
+
+@import "blocks/header"
+@import "blocks/offer"
+@import "blocks/features"
+
+
+.fullscreen
+  min-height: 100vh
+  position: relative
+  overflow: hidden
+  &-bg
+    position: relative
+    &__wrapper
+      position: absolute
+      top: -30px
+      right: -10%
+      z-index: -1
+.header
+  &-bg
+    &__wrapper
+      position: absolute
+      top: 0
+      z-index: -1
+      left: 0
+    &__img
+      width: 50%
+  &-logo
+    position: absolute
+    top: 0
+    left: 0
+
+@import "media"
+
+
+
+
