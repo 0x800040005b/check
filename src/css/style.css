@@ -609,9 +609,11 @@ img {
       z-index: -1; }
 
 .header-bg {
-  position: relative; }
+  position: relative;
+  max-height: 100px; }
   .header-bg__wrapper {
-    width: 15%; }
+    width: 15%;
+    max-height: 100px; }
 
 .header-logo {
   position: absolute;
