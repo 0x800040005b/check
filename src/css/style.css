@@ -540,28 +540,7 @@ img {
     color: #AB66D9;
     font-weight: 600;
     text-decoration: underline; }
-
-.offer-fact {
-  max-width: 158px;
-  border-radius: 15px;
-  background: #FFFFFF;
-  text-align: center;
-  padding: 28px 14px 19px 15px; }
-  .offer-facts {
-    position: absolute;
-    top: 5%; }
-    .offer-facts_mobile {
-      display: none; }
-  .offer-fact_1 {
-    margin-bottom: 73px;
-    box-shadow: 0 4px 10px rgba(250, 190, 44, 0.22); }
-  .offer-fact_2 {
-    margin-bottom: 45px;
-    box-shadow: 0 4px 10px rgba(143, 0, 255, 0.22);
-    margin-left: 50px; }
-  .offer-fact_3 {
-    box-shadow: 0 4px 10px rgba(250, 190, 44, 0.22); }
-  .offer-fact__text {
+  .offer-link__text {
     line-height: 125.5%;
     letter-spacing: 0.01em;
     color: rgba(0, 0, 0, 0.8);
@@ -607,18 +586,6 @@ img {
       top: -30px;
       right: -10%;
       z-index: -1; }
-
-.header-bg {
-  position: relative;
-  max-height: 100px; }
-  .header-bg__wrapper {
-    width: 15%;
-    max-height: 100px; }
-
-.header-logo {
-  position: absolute;
-  top: 0;
-  left: 0; }
 
 @media screen and (min-width: 1920px) {
   .offer-block {
