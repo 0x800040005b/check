@@ -555,8 +555,7 @@ img {
 
 .features {
   background: #FFFFFF;
-  padding-bottom: 110px;
-  margin-top: 10%; }
+  padding-bottom: 110px; }
   .features-block {
     justify-content: center;
     align-items: center; }
@@ -585,16 +584,14 @@ img {
   min-height: 100vh;
   position: relative;
   overflow: hidden; }
+  .fullscreen__container {
+    margin-bottom: 100px; }
 
 @media screen and (min-width: 1920px) {
   .offer-block {
     min-height: 0; }
   .fullscreen__container {
     min-height: 0; } }
-
-@media screen and (max-width: 1600px) {
-  .fullscreen__container {
-    padding-bottom: 10%; } }
 
 @media screen and (max-width: 1455px) {
   .offer-text {
