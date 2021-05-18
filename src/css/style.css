@@ -468,21 +468,14 @@ img {
     margin-right: 30px; }
     .header-menu__link {
       color: #000000;
-      margin-right: 53px;
+      display: inline-block;
+      margin-right: 25px;
       font-size: 16px;
       font-weight: 400; }
       .header-menu__link:last-child {
         margin-right: 0; }
-  .header-social {
-    display: flex; }
-    .header-social__link {
-      display: inline-block;
-      margin-right: 25px; }
-      .header-social__link:last-child {
-        margin-right: 0; }
-    .header-social__img {
-      width: 25px;
-      height: 25px; }
+    .header-menu__link:last-child {
+      margin-right: 0; }
   .header__button {
     padding: 16px 28px;
     border-radius: 18px;
@@ -498,7 +491,7 @@ img {
 
 .offer-block {
   position: relative;
-  align-items: center; }
+  justify-content: space-between; }
 
 .offer-text {
   max-width: 469px;
@@ -546,6 +539,16 @@ img {
     color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     font-weight: 400; }
+
+.offer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  .offer-social__img {
+    width: 100%;
+    height: 100%;
+    max-width: 25px;
+    max-height: 25px; }
 
 .features {
   background: #FFFFFF;
