@@ -443,6 +443,8 @@ img {
   padding: 0 5px;
   margin-bottom: 50px;
   position: relative; }
+  .header-logo__img {
+    margin-right: 13px; }
   .header-burger {
     width: 40px;
     height: 20px;
@@ -488,6 +490,11 @@ img {
     font-weight: 700; }
   .header-container-fluid {
     padding: 0; }
+
+.logo__text {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000; }
 
 .offer-block {
   position: relative;
