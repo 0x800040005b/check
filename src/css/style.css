@@ -443,6 +443,8 @@ img {
   padding: 0 5px;
   margin-bottom: 50px;
   position: relative; }
+  .header-logo:hover {
+    text-decoration: none; }
   .header-logo__img {
     margin-right: 13px; }
   .header-burger {
