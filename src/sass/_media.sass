@@ -1,1 +1,104 @@
+@media screen and ( max-width: 1219px)
+    .features
+        &-item
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+@media screen and ( max-width: 992px)
+    .offer
+        &-block
+            flex-direction: column
+            align-items: center
+        &-text
+            margin-bottom: 60px
+            margin-top: 0
+        &-img-block
+            flex-direction: row-reverse
+        &-img
+            margin-right: 0
+            margin-left: 200px
+@media screen and ( max-width: 905px)
+    .header
+        &-block
+            align-items: center
+            position: relative
+        &-logo
+            display: none
+        &-burger
+            display: block
+        &-menu
+            margin-right: 0
+            display: flex
+            flex-direction: column
+            position: absolute
+            top: 5%
+            left: -100%
+            &.active
+                left: 0
+                z-index: 2
+            &__link
+                margin-right: 0
+                margin-bottom: 30px
+                padding: 10px 20px
+                color: $white-color
+                font-size: 20px
+                font-weight: 700
+@media screen and ( max-width: 768px  )
+    .offer
+        &-img
+            margin-left: 100px
+@media screen and ( max-width: 408px)
+    .features
+        &-item
+            &__content
+                padding: 43px 30px 38px 24px
+            &__img
+                margin-bottom: 26px
+            &__text
+                font-size: 16px
+                line-height: 20px
 
+@media screen and ( max-width: 385px )
+    .offer
+        &-text
+            &__title
+                font-size: 18px
+                line-height: 29px
+            &__desc
+                font-size: 14px
+        &-link
+            margin: 0
+            margin-bottom: 20px
+            &_more
+                border: 2px solid $violet-color
+                text-align: center
+                border-radius: 18px
+                padding: 16px 28px
+                &:active
+                    background: $violet-color
+                    color: $white-color
+
+            &s
+                display: flex
+                flex-direction: column
+@media screen and ( max-width: 320px )
+    .offer
+        &-text
+            &__title
+                font-size: 18px
+                line-height: 29px
+                span
+                    line-height: 23px
+                    font-size: 12px
+                    mb15px
+            &__desc
+                font-size: 14px
+        &-social
+            margin-top: 0
+        &-link
+            margin: 0
+            margin-bottom: 20px
+            &s
+                display: flex
+                flex-direction: column
+                align-items: center
