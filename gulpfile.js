@@ -29,19 +29,19 @@ gulp.task('server', function() {
 });
 gulp.task('moveFiles', function(done) {
     /* Image files */
-    gulp.src('src/img/**/*.*')
-        .pipe(imgMin([
-            imgMin.gifsicle({ interlaced: true }),
-            imgMin.mozjpeg({ quality: 75, progressive: true }),
-            imgMin.optipng({ optimizationLevel: 5 }),
-            imgMin.svgo({
-                plugins: [
-                    { removeViewBox: true },
-                    { cleanupIDs: false }
-                ]
-            })
-        ]))
-        .pipe(gulp.dest('dist/img'))
+    // gulp.src('src/img/**/*.*')
+    //     .pipe(imgMin([
+    //         imgMin.gifsicle({ interlaced: true }),
+    //         imgMin.mozjpeg({ quality: 75, progressive: true }),
+    //         imgMin.optipng({ optimizationLevel: 5 }),
+    //         imgMin.svgo({
+    //             plugins: [
+    //                 { removeViewBox: true },
+    //                 { cleanupIDs: false }
+    //             ]
+    //         })
+    //     ]))
+    //     .pipe(gulp.dest('dist/img'))
 
     /* HTML files*/
     gulp.src('src/*.html')
