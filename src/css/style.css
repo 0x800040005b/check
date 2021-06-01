@@ -521,10 +521,10 @@ img {
       letter-spacing: 0.05em;
       color: #AB66D9;
       display: block;
-      line-height: 37px;
+      line-height: 17px;
       font-weight: 700;
       font-size: 14px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       text-transform: none; }
   .offer-text__desc {
     margin-bottom: 44px;
@@ -589,10 +589,18 @@ img {
     border-radius: 25px;
     background: #FFFFFF;
     display: flex;
-    flex-direction: column;
-    margin: 0 15px; }
+    flex-direction: column; }
+    .features-item__title {
+      margin-bottom: 20px;
+      display: block;
+      text-indent: 10%;
+      font-size: 14px;
+      font-weight: 700;
+      color: #B03236;
+      text-align: left; }
     .features-item_2 {
-      box-shadow: 0 4px 10px rgba(255, 181, 0, 0.32); }
+      box-shadow: 0 4px 10px rgba(255, 181, 0, 0.32);
+      margin: 0 15px; }
     .features-item__content {
       padding: 49px 33px 43px 34px;
       text-align: center;
