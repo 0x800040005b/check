@@ -441,8 +441,8 @@ img {
 
 /* Styles For Blocks */
 .header {
-  padding: 10px 5px;
-  margin-bottom: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
   position: relative; }
   .header-logo:hover {
     text-decoration: none; }
@@ -509,7 +509,7 @@ img {
 
 .offer-text {
   max-width: 469px;
-  margin-top: 50px; }
+  margin-top: 100px; }
   .offer-text__title {
     line-height: 149.5%;
     letter-spacing: 0.02em;
@@ -571,10 +571,31 @@ img {
     margin-bottom: 30px;
     display: inline-block; }
   .offer-social__img {
-    width: 100%;
+    width: 25px;
     height: 100%;
-    max-width: 25px;
     max-height: 25px; }
+
+.more-block {
+  justify-content: center; }
+
+.more-title {
+  line-height: 122.5%;
+  letter-spacing: .02em;
+  margin-bottom: 20px;
+  font-size: 23px;
+  font-weight: 600; }
+  .more-title__label {
+    letter-spacing: .05em;
+    color: #AB66D9;
+    display: block;
+    line-height: 37px;
+    font-weight: 900; }
+
+.more-content__text {
+  margin-bottom: 44px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  letter-spacing: .01em; }
 
 .features {
   background: #FFFFFF;
@@ -605,8 +626,7 @@ img {
       padding: 49px 33px 43px 34px;
       text-align: center;
       display: flex;
-      flex-direction: column;
-      flex: 1 1 auto; }
+      flex-direction: column; }
     .features-item__img {
       margin-bottom: 30px;
       flex: 1 1 auto; }
@@ -630,6 +650,8 @@ img {
       margin-bottom: 0; } }
 
 @media screen and (max-width: 992px) {
+  .header {
+    margin-bottom: 60px; }
   .offer-block {
     flex-direction: column;
     align-items: center; }
