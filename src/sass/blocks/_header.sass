@@ -37,15 +37,10 @@
     transition: all 0.8s ease
     &__link
       color: $black-color
-      display: inline-block
       margin-right: 25px
       font:
         size: 16px
         weight: 400
-      &:last-child
-        margin-right: 0
-    &__link
-
       &:last-child
         margin-right: 0
   &__button
@@ -60,3 +55,14 @@
   font-weight: 700
   text-transform: uppercase
   color: $black-color
+.menu
+  &-list
+    max-width: 450px
+  &-item
+    margin-right: 32px
+    margin-bottom: 10px
+    &:nth-child(5n)
+      margin-bottom: 0
+    &:last-child
+      margin-right: 0
+      margin-bottom: 0
