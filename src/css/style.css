@@ -438,6 +438,11 @@ img {
 .lock {
   overflow: hidden; }
 
+label {
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+
 /* Styles For Blocks */
 .header {
   padding: 5px;
@@ -672,6 +677,88 @@ img {
     font-size: 23px;
     font-weight: 600; }
 
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #B03236; }
+  .popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    max-width: 600px;
+    background: rgba(171, 102, 217, 0.6);
+    padding: 20px 30px;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scaleX(-1); }
+    .popup-form.active {
+      transition: all 0.8s ease;
+      width: auto;
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%) scaleX(1); }
+    .popup-form-label {
+      color: #FFFFFF;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px; }
+      .popup-form-label:hover {
+        cursor: pointer; }
+    .popup-form-wrapper {
+      margin-bottom: 30px; }
+    .popup-form-input {
+      border: none;
+      width: 300px;
+      padding: 20px 30px;
+      border-radius: 5px;
+      color: #a0a0a0;
+      font-size: 14px; }
+      .popup-form-input::placeholder {
+        font-size: 18px;
+        color: #a0a0a0; }
+      .popup-form-input:hover {
+        cursor: pointer; }
+    .popup-form-send {
+      border: 3px solid #FFFFFF;
+      background-color: transparent;
+      font-size: 20px;
+      font-family: inherit;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      transition: all 0.8s ease;
+      width: 100%;
+      display: block; }
+      .popup-form-send:hover {
+        color: #AB66D9;
+        background-color: #FFFFFF;
+        cursor: pointer; }
+
+.popup-close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  transition: all 0.8s ease; }
+  .popup-close:hover {
+    cursor: pointer; }
+  .popup-close::before, .popup-close::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #FFFFFF;
+    position: absolute; }
+  .popup-close::before {
+    transform: rotate(45deg); }
+  .popup-close::after {
+    transform: rotate(-45deg); }
+
 .fullscreen {
   min-height: 100vh;
   position: relative;
@@ -726,7 +813,10 @@ img {
       padding: 10px 20px;
       color: #FFFFFF;
       font-size: 20px;
-      font-weight: 700; } }
+      font-weight: 700;
+      display: block; }
+  .menu-list {
+    flex-direction: column; } }
 
 @media screen and (max-width: 768px) {
   .offer-block {

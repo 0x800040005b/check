@@ -5,11 +5,30 @@ document.addEventListener('DOMContentLoaded', function () {
         headerMenu = document.querySelector('.header-menu'),
         body = document.querySelector('body'),
         menuContainer = document.querySelector('#header-menu'),
-        button_order = document.querySelector('.header__button');
+        button_order = document.querySelector('.header__button'),
+        modal_form = document.querySelector('.popup-form'),
+        modal_close = document.querySelector('.popup-close');
     if(button_order != null){
         button_order.addEventListener('hover',function (event) {
             event.preventDefault();
             event.stopImmediatePropagation();
+
+        });
+        button_order.addEventListener('click',function(event){
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            if(modal_form != null){
+                modal_form.classList.toggle('active');
+            }
+
+
+        });
+    }
+    if(modal_close != null){
+        modal_close.addEventListener('click', function(){
+            if(modal_form != null){
+                modal_form.classList.toggle('active');
+            }
 
         });
     }
