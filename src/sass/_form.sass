@@ -2,10 +2,7 @@
     display: flex
     justify-content: center
     align-items: center
-    border: 1px solid $red-color
     &-form
-        *::focus
-            outline 1px solid $violet-color
         position: fixed
         top: 50%
         left: 50%
@@ -20,8 +17,6 @@
         transform: translate(-50%,-50%) scaleX(-1)        
         &.active
             transition: all 0.8s ease
-            width: auto
-            height: auto
             opacity: 1
             visibility: visible
             transform: translate(-50%, -50%) scaleX(1)        

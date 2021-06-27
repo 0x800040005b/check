@@ -12,6 +12,11 @@
     background: $white-color
     display: flex
     flex-direction: column
+    margin-bottom: 15px
+    &:nth-child(2n)
+      box-shadow: 0 4px 10px rgba(255, 181, 0, 0.32)
+      margin: 0 15px 15px 15px
+      
     &__title
       margin-bottom: 20px
       display: block
@@ -21,9 +26,6 @@
         weight: 700
       color: $red-color
       text-align: left
-    &_2
-      box-shadow: 0 4px 10px rgba(255, 181, 0, 0.32)
-      margin: 0 15px
     &__content
       padding: 49px 33px 43px 34px
       text-align: center

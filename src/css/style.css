@@ -443,6 +443,9 @@ label {
   padding: 0;
   text-align: left; }
 
+.ajax_form spans.error {
+  display: block; }
+
 /* Styles For Blocks */
 .header {
   padding: 5px;
@@ -626,7 +629,11 @@ label {
     border-radius: 25px;
     background: #FFFFFF;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 15px; }
+    .features-item:nth-child(2n) {
+      box-shadow: 0 4px 10px rgba(255, 181, 0, 0.32);
+      margin: 0 15px 15px 15px; }
     .features-item__title {
       margin-bottom: 20px;
       display: block;
@@ -635,9 +642,6 @@ label {
       font-weight: 700;
       color: #B03236;
       text-align: left; }
-    .features-item_2 {
-      box-shadow: 0 4px 10px rgba(255, 181, 0, 0.32);
-      margin: 0 15px; }
     .features-item__content {
       padding: 49px 33px 43px 34px;
       text-align: center;
@@ -680,8 +684,7 @@ label {
 .popup {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 1px solid #B03236; }
+  align-items: center; }
   .popup-form {
     position: fixed;
     top: 50%;
@@ -697,8 +700,6 @@ label {
     transform: translate(-50%, -50%) scaleX(-1); }
     .popup-form.active {
       transition: all 0.8s ease;
-      width: auto;
-      height: auto;
       opacity: 1;
       visibility: visible;
       transform: translate(-50%, -50%) scaleX(1); }
