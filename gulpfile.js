@@ -53,6 +53,10 @@ gulp.task('moveFiles', function(done) {
         .pipe(concat('main.min.js'))
         .pipe(gulp.dest('dist/js'))
 
+    /* Image files */
+    gulp.src(['src/img/**/*.*'])
+    .pipe(gulp.dest('dist/img'))
+
     /* fonts */
 
     gulp.src('src/fonts/**/*.*')
