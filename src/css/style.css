@@ -455,8 +455,6 @@ label {
     text-decoration: none; }
   .header-logo__img {
     margin-right: 13px;
-    max-width: 84px;
-    max-height: 88px;
     border-radius: 50%; }
   .header-burger {
     width: 40px;
