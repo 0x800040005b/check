@@ -71,11 +71,8 @@ img
     visibility: visible
 
 .menu_close
-  width: 0
-  height: 0
   opacity: 0
   visibility: hidden
-  transition: all 0.5s
   position: fixed
   bottom: -100%
   &.active
@@ -85,13 +82,12 @@ img
     opacity: 1
     visibility: visible
     position: fixed
-    bottom: 85%
+    bottom: 90%
     right: 3%
     z-index: 4
   &::before, &::after
     content: ''
     transition: all 0.5s
-    transform: rotate(360deg)
     width: 100%
     height: 2px
     display: block
@@ -111,6 +107,6 @@ img
 label
   margin: 0
   padding: 0
-  text-align: left;
-.ajax_form spans.error
+  text-align: left
+.ajax_form span.error
   display: block
