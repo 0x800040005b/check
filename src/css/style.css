@@ -404,8 +404,7 @@ img {
   visibility: hidden;
   transition: all 0.5s;
   position: fixed;
-  bottom: -100%;
-  transform: rotate(180deg); }
+  bottom: -100%; }
   .menu_close.active {
     transition: all 0.5s;
     width: 30px;
@@ -413,10 +412,9 @@ img {
     opacity: 1;
     visibility: visible;
     position: fixed;
-    bottom: 90%;
+    bottom: 85%;
     right: 3%;
-    z-index: 4;
-    transform: rotate(360deg); }
+    z-index: 4; }
   .menu_close::before, .menu_close::after {
     content: '';
     transition: all 0.5s;
